@@ -2,6 +2,12 @@ html {
     background-color:rgb(237, 245, 248);
 }
 
+.top-part {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 .site-nav {
     background-color:rgb(160, 191, 249);
 }
@@ -10,6 +16,8 @@ html {
     display:flex;
     list-style-type:none;
     padding:0;
+    justify-content:center;
+    gap: 60px;
 
 }
 
@@ -47,4 +55,22 @@ html {
 
 .has-dropdown:hover .dropdown {
     display:block;
+}
+
+.code
+{ 
+    background-color:pink;
+    color:magenta;
+    padding: 4px;
+    font-style: italic;
+    border-radius: 1px;
+    font-family: 'Quintessential Static', cursive;
+
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }

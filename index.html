@@ -8,15 +8,19 @@
 
         <body>
             <header>
-            <h1>CSS Positioning: Drop Down Menu </h1>
-            <p>
-                <code>position: relative</code> 
+                    <div class="top-part">
+                        <h1>CSS Positioning: Drop Down Menu </h1>
+                    <p>
+                <code class="code">position: relative</code> 
                 and 
-                <code>position: absolute</code>
-            </p>
+                <code class="code">position: absolute</code>
+            </p> 
+        
+        </div>
+        
 
             <nav class="site-nav">
-                <ul class="site-links">
+                <ul class="site-links top-part">
                     <li><a href="" class="site-link">Home</a></li>
                     <li><a href="" class="site-link">About</a></li>
                     <li class="has-dropdown"
@@ -32,15 +36,15 @@
             </nav>
         </header>
 
-        <main>
+        <main class="main-content">
             <p>
-                The parent list item needs position: relative so that the child submenu can be positioned with position: absolute relative to it — not relative to the entire page.</p>
+                The parent list item needs <code class="code">position: relative</code> so that the child submenu can be positioned with <code class="code">position: absolute</code> relative to it — not relative to the entire page.</p>
             
             <p>
-                The submenu (a nested ul inside one of the li elements) is hidden by default with display: none. When the user hovers over the parent list item, the submenu is shown with display: block.
+                The submenu (a nested <code class="code">ul</code> inside one of the <code class="code">li</code> elements) is hidden by default with <code class="code">display: none</code>. When the user hovers over the parent list item, the submenu is shown with <code class="code">display: block</code>.
             </p>
             <p>
-                The key concept: position: absolute places an element relative to its nearest ancestor that has position: relative. Without that ancestor, it positions relative to the page — which is almost never what you want.
+                The key concept: <code class="code">position: absolute</code> places an element relative to its nearest ancestor that has <code class="code">position: relative</code>. Without that ancestor, it positions relative to the page — which is almost never what you want.
             </p>
         </main>
      </body>
