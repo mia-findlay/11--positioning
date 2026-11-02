@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>11 Position</title>
+                <link rel="stylesheet" href="styles.css">
+        </head>
+
+        <body>
+            <header>
+            <h1>CSS Positioning: Drop Down Menu </h1>
+            <p>
+                <code>position: relative</code> 
+                and 
+                <code>position: absolute</code>
+            </p>
+
+            <nav class="site-nav">
+                <ul class="site-links">
+                    <li><a href="" class="site-link">Home</a></li>
+                    <li><a href="" class="site-link">About</a></li>
+                    <li class="has-dropdown"
+                        ><a href="" class="site-link">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="" class="dropdown-link">Widgets</a></li>
+                            <li><a href="" class="dropdown-link">Gadgets</a></li>
+                            <li><a href="" class="dropdown-link">Gizmos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="site-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <p>
+                The parent list item needs position: relative so that the child submenu can be positioned with position: absolute relative to it — not relative to the entire page.</p>
+            
+            <p>
+                The submenu (a nested ul inside one of the li elements) is hidden by default with display: none. When the user hovers over the parent list item, the submenu is shown with display: block.
+            </p>
+            <p>
+                The key concept: position: absolute places an element relative to its nearest ancestor that has position: relative. Without that ancestor, it positions relative to the page — which is almost never what you want.
+            </p>
+        </main>
+     </body>
+</html>

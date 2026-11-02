@@ -1,0 +1,50 @@
+html {
+    background-color:rgb(237, 245, 248);
+}
+
+.site-nav {
+    background-color:rgb(160, 191, 249);
+}
+
+.site-links {
+    display:flex;
+    list-style-type:none;
+    padding:0;
+
+}
+
+.site-link{
+    display:block;
+    padding: 10px;
+    color:white;
+    text-decoration:none;
+}
+
+.site-link:hover {
+    background-color:rgb(160, 160, 255);
+}
+
+.dropdown {
+    background-color:seashell;
+    position:absolute;
+    box-shadow: 2px 2px 8px 0 rgba(233, 229, 255, 0.2);
+    list-style-type:none;
+    padding:0;
+    display:none;
+    
+}
+
+.dropdown-link {
+    color:rgb(152, 152, 152);
+    text-decoration:none;
+    display:block;
+    padding:10px 16px;
+}
+
+.dropdown-link:hover {
+    background-color:rgb(213, 213, 255);
+}
+
+.has-dropdown:hover .dropdown {
+    display:block;
+}
